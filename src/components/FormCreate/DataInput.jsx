@@ -7,7 +7,7 @@ export const DataInput = ({dataRef}) => {
     <input ref={dataRef} className='input-link'
       type="text"
       id="dataFileUrl"
-      defaultValue={"http://localhost:3000/config/data.json"}
+      defaultValue={"https://3HunnaWeight.githun.io.test-task/config/data.json"}
     />
   </div>
   )

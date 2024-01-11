@@ -9,13 +9,20 @@ export const CreateForm = () => {
   const dataRef = useRef();
   const fetchConfigAndData = () => {
     if(configRef.current.value && dataRef.current.value){
+    
       fetch(configRef.current.value)
       .then(response => response.json())
-      .then(data => setFormConfig(data));
-      
+      .then(data => setFormConfig(data))
+      .catch((error) => {
+        alert('Произошла ошибка при загрузке конфигурационного файла.',error);
+      });
+     
     fetch(dataRef.current.value)
       .then(response => response.json())
-      .then(data => setFormData(data));
+      .then(data => setFormData(data))
+      .catch((error) => {
+        alert('Произошла ошибка при загрузке файла данных.', error);
+      });
     }
    else{
     alert('Заполните поля');
