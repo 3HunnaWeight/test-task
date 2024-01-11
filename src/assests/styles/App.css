@@ -1,0 +1,43 @@
+
+body{
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.created-form{
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  border: solid gray 2px;
+
+}
+.linput-label{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 10px;
+}
+.form-creator-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.hint{
+  border: 2px solid gray;
+  padding: 20px;
+}
+.right{
+  align-self: flex-end;
+  margin: 20px 0px 20px 0px;
+}
+label{
+  display: block;
+}
+.input-link{
+  width: 100%;
+}
+.form-description{
+  margin: 20px 0 20px 0;
+}
