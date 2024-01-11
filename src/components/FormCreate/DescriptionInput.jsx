@@ -7,7 +7,7 @@ export const DescriptionInput = ({configRef}) => {
     <input ref={configRef} className='input-link'
       type="text"
       id="configFileUrl"
-      defaultValue={"https://3HunnaWeight.githun.io.test-task/config/config.json"}
+      defaultValue={"https://3hunnaweight.github.io/test-task/config/config.json"}
     />
   </div>
   )
